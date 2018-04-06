@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>固定布局</title>
+    <style type="text/css">
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        html,body{
+            width:100% ;
+            height: 100%;
+        }
+        .fixedlayout{
+            width:800px ;
+            background:gray;
+            padding:10px;
+            margin:100px auto ;
+            overflow: hidden;
+        }
+        .left{
+            width: 380px;
+            height: 200px;
+            background: blue;
+            text-align: center;
+            line-height: 200px;
+            display: inline-block;
+            margin:0px 15px ;
+            float: left;
+        }
+        .right{
+            width: 380px;
+            height: 200px;
+            background: red;
+            text-align: center;
+            line-height:200px ;
+            display: inline-block;
+            float: left;
+        }
+
+    </style>
+</head>
+
+<body>
+</body>
+<div class="fixedlayout">
+    <div class="left">
+        我是固定布局1
+    </div>
+    <div class="right">
+        我是固定布局2
+    </div>
+    <p>
+        固定布局，宽度，高度固定，页面被一个固定网页包裹，容器不能移动，页面的宽高不随页面的变化而变化，
+        这种布局大家比较熟悉，这种方式一度成为页面布局的主流方式，这样布局设计简单，更容易定义，
+        但是由于屏幕尺寸的不同，特别是移动端各个设备的不同，这种布局在灵活性方式可用度不高。
+    </p>
+</div>
+</html>
+
